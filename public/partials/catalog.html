@@ -1,0 +1,53 @@
+<section class="wrapper">
+
+    <div class="container-fostrap">
+    <button type="button" class="btn btn-danger fa fa-plus" ng-click="open(product);"></button>
+    <div class="row"></div>
+    <br/>
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4" ng-repeat="c in products">
+                            <div class="card">
+                                <a class="img-card" href="http://www.fostrap.com/2016/03/bootstrap-3-carousel-fade-effect.html">
+                                <img src="https://1.bp.blogspot.com/-Bii3S69BdjQ/VtdOpIi4aoI/AAAAAAAABlk/F0z23Yr59f0/s640/cover.jpg" />
+                              </a>
+                              <div class="card-read-more dropup" style="text-align: left;">
+                                    <a href="forecast" class="btn" data-toggle="dropdown"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+
+                                        <ul class="dropdown-menu">
+                                        <li><a style="cursor: pointer;" ng-click="open(c);">Edit</a></li>
+                                        <li><a style="cursor: pointer;" ng-click="remove(c);">Remove</a></li>
+                                      </ul>
+
+                                </div>
+                                <div class="card-content">
+
+                                    <h4 class="card-title">
+                                        <a href="http://www.fostrap.com/2016/03/bootstrap-3-carousel-fade-effect.html"> {{c.name}}
+                                      </a>
+                                    </h4>
+                                    <p class="">
+                                        Final project MRPHP
+                                    </p>
+                                </div>
+                                <div class="card-read-more">
+                                    <a href="forecast" class="btn btn-link btn-block">
+                                        Forecasting
+                                    </a>
+                                </div>
+                                <div class="card-read-more">
+                                    <a href="#/{{c._id}}/penjualan" class="btn btn-link btn-block">
+                                        Sales
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
